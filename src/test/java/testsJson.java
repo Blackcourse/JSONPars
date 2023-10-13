@@ -14,8 +14,6 @@ public class testsJson {
     @Test
     public void testJsonParsing() {
         Map<String, String> params = new HashMap<>();
-        params.put("message", "second message");
-        params.put ("timestamp", "2021-06-04 16:41:51");
         JsonPath response = RestAssured
                 .given()
                 .queryParams(params)
